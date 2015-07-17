@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEE361B594BBD00F62184 /* SearchResultCell.swift */; };
+		18DAEE391B594E7500F62184 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DAEE381B594E7500F62184 /* NothingFoundCell.xib */; };
 		18FDA0D51B58EEF9008C051A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0D41B58EEF9008C051A /* AppDelegate.swift */; };
 		18FDA0D71B58EEF9008C051A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0D61B58EEF9008C051A /* SearchViewController.swift */; };
 		18FDA0DA1B58EEF9008C051A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FDA0D81B58EEF9008C051A /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		18FDA0DF1B58EEF9008C051A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDA0DD1B58EEF9008C051A /* LaunchScreen.xib */; };
 		18FDA0EB1B58EEF9008C051A /* StoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0EA1B58EEF9008C051A /* StoreSearchTests.swift */; };
 		18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0F41B592E1F008C051A /* SearchResult.swift */; };
+		18FDA0F71B5937F7008C051A /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDA0F61B5937F7008C051A /* SearchResultCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18DAEE361B594BBD00F62184 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		18DAEE381B594E7500F62184 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		18FDA0CF1B58EEF9008C051A /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FDA0D31B58EEF9008C051A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDA0D41B58EEF9008C051A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		18FDA0E91B58EEF9008C051A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDA0EA1B58EEF9008C051A /* StoreSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchTests.swift; sourceTree = "<group>"; };
 		18FDA0F41B592E1F008C051A /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		18FDA0F61B5937F7008C051A /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,10 @@
 			children = (
 				18FDA0D41B58EEF9008C051A /* AppDelegate.swift */,
 				18FDA0D61B58EEF9008C051A /* SearchViewController.swift */,
+				18DAEE381B594E7500F62184 /* NothingFoundCell.xib */,
 				18FDA0F41B592E1F008C051A /* SearchResult.swift */,
+				18DAEE361B594BBD00F62184 /* SearchResultCell.swift */,
+				18FDA0F61B5937F7008C051A /* SearchResultCell.xib */,
 				18FDA0D81B58EEF9008C051A /* Main.storyboard */,
 				18FDA0DB1B58EEF9008C051A /* Images.xcassets */,
 				18FDA0DD1B58EEF9008C051A /* LaunchScreen.xib */,
@@ -197,6 +206,8 @@
 			files = (
 				18FDA0DA1B58EEF9008C051A /* Main.storyboard in Resources */,
 				18FDA0DF1B58EEF9008C051A /* LaunchScreen.xib in Resources */,
+				18FDA0F71B5937F7008C051A /* SearchResultCell.xib in Resources */,
+				18DAEE391B594E7500F62184 /* NothingFoundCell.xib in Resources */,
 				18FDA0DC1B58EEF9008C051A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +228,7 @@
 			files = (
 				18FDA0D71B58EEF9008C051A /* SearchViewController.swift in Sources */,
 				18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */,
+				18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */,
 				18FDA0D51B58EEF9008C051A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +425,7 @@
 				18FDA0F01B58EEF9008C051A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18FDA0F11B58EEF9008C051A /* Build configuration list for PBXNativeTarget "StoreSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				18FDA0F31B58EEF9008C051A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
