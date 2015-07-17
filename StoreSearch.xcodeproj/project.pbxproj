@@ -13,6 +13,7 @@
 		18FDA0DC1B58EEF9008C051A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FDA0DB1B58EEF9008C051A /* Images.xcassets */; };
 		18FDA0DF1B58EEF9008C051A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDA0DD1B58EEF9008C051A /* LaunchScreen.xib */; };
 		18FDA0EB1B58EEF9008C051A /* StoreSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0EA1B58EEF9008C051A /* StoreSearchTests.swift */; };
+		18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA0F41B592E1F008C051A /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		18FDA0E41B58EEF9008C051A /* StoreSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FDA0E91B58EEF9008C051A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FDA0EA1B58EEF9008C051A /* StoreSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSearchTests.swift; sourceTree = "<group>"; };
+		18FDA0F41B592E1F008C051A /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				18FDA0D41B58EEF9008C051A /* AppDelegate.swift */,
 				18FDA0D61B58EEF9008C051A /* SearchViewController.swift */,
+				18FDA0F41B592E1F008C051A /* SearchResult.swift */,
 				18FDA0D81B58EEF9008C051A /* Main.storyboard */,
 				18FDA0DB1B58EEF9008C051A /* Images.xcassets */,
 				18FDA0DD1B58EEF9008C051A /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FDA0D71B58EEF9008C051A /* SearchViewController.swift in Sources */,
+				18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */,
 				18FDA0D51B58EEF9008C051A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
