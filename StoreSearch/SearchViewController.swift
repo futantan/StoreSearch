@@ -294,6 +294,7 @@ extension SearchViewController: UITableViewDelegate {
     // simply deselect the row that just selected
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        performSegueWithIdentifier("ShowDetail", sender: indexPath)
     }
     
     // make sure only rows with data can be selected
@@ -305,4 +306,3 @@ extension SearchViewController: UITableViewDelegate {
         }
     }
 }
-

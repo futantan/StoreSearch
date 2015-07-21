@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1817CEFE1B5D2EA400F0955C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */; };
+		1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */; };
 		183894F11B5A81BF00327546 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183894F01B5A81BF00327546 /* LoadingCell.xib */; };
 		183A81D81B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A81D71B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift */; };
 		18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEE361B594BBD00F62184 /* SearchResultCell.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		183894F01B5A81BF00327546 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		183A81D71B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		18DAEE361B594BBD00F62184 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -89,8 +93,10 @@
 			children = (
 				18FDA0D41B58EEF9008C051A /* AppDelegate.swift */,
 				18FDA0D61B58EEF9008C051A /* SearchViewController.swift */,
+				1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */,
 				18FDA0F41B592E1F008C051A /* SearchResult.swift */,
 				18DAEE361B594BBD00F62184 /* SearchResultCell.swift */,
+				1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */,
 				183A81D71B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift */,
 				18FDA0F61B5937F7008C051A /* SearchResultCell.xib */,
 				183894F01B5A81BF00327546 /* LoadingCell.xib */,
@@ -230,8 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FDA0D71B58EEF9008C051A /* SearchViewController.swift in Sources */,
+				1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */,
 				18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */,
 				18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */,
+				1817CEFE1B5D2EA400F0955C /* DetailViewController.swift in Sources */,
 				18FDA0D51B58EEF9008C051A /* AppDelegate.swift in Sources */,
 				183A81D81B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift in Sources */,
 			);
