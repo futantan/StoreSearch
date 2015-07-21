@@ -78,6 +78,36 @@
             </objects>
             <point key="canvasLocation" x="306" y="286"/>
         </scene>
+        <!--Landscape View Controller-->
+        <scene sceneID="k9t-4I-mdw">
+            <objects>
+                <viewController storyboardIdentifier="LandscapeViewController" id="4f2-EY-txF" customClass="LandscapeViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bbT-R2-Klm"/>
+                        <viewControllerLayoutGuide type="bottom" id="dif-jw-cSi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cSA-Wm-vLa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loving this world" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAm-gx-M2f">
+                                <rect key="frame" x="235" y="289" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="LAm-gx-M2f" secondAttribute="centerY" id="3XW-fh-Q75"/>
+                            <constraint firstAttribute="centerX" secondItem="LAm-gx-M2f" secondAttribute="centerX" id="FfI-le-tCH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teF-r7-xKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="1050"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="ihr-pB-K5a">
             <objects>
@@ -217,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1s4-Iq-GeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="1042"/>
+            <point key="canvasLocation" x="1086" y="286"/>
         </scene>
     </scenes>
     <resources>
