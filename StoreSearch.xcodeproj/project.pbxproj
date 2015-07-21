@@ -10,6 +10,8 @@
 		1817CEFE1B5D2EA400F0955C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */; };
 		1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */; };
 		181BFE2C1B5E41450087257F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BFE2B1B5E41450087257F /* GradientView.swift */; };
+		181BFE2E1B5E5EEC0087257F /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BFE2D1B5E5EEC0087257F /* BounceAnimationController.swift */; };
+		181BFE301B5E6EEB0087257F /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BFE2F1B5E6EEB0087257F /* SlideOutAnimationController.swift */; };
 		183894F11B5A81BF00327546 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183894F01B5A81BF00327546 /* LoadingCell.xib */; };
 		183A81D81B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A81D71B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift */; };
 		18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DAEE361B594BBD00F62184 /* SearchResultCell.swift */; };
@@ -37,6 +39,8 @@
 		1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		181BFE2B1B5E41450087257F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		181BFE2D1B5E5EEC0087257F /* BounceAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
+		181BFE2F1B5E6EEB0087257F /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		183894F01B5A81BF00327546 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		183A81D71B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		18DAEE361B594BBD00F62184 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				18FDA0D41B58EEF9008C051A /* AppDelegate.swift */,
 				18FDA0D61B58EEF9008C051A /* SearchViewController.swift */,
 				1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */,
+				181BFE2D1B5E5EEC0087257F /* BounceAnimationController.swift */,
+				181BFE2F1B5E6EEB0087257F /* SlideOutAnimationController.swift */,
 				18FDA0F41B592E1F008C051A /* SearchResult.swift */,
 				18DAEE361B594BBD00F62184 /* SearchResultCell.swift */,
 				1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */,
@@ -242,10 +248,12 @@
 				1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */,
 				18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */,
 				18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */,
+				181BFE2E1B5E5EEC0087257F /* BounceAnimationController.swift in Sources */,
 				1817CEFE1B5D2EA400F0955C /* DetailViewController.swift in Sources */,
 				18FDA0D51B58EEF9008C051A /* AppDelegate.swift in Sources */,
 				181BFE2C1B5E41450087257F /* GradientView.swift in Sources */,
 				183A81D81B5CAF3A0015DB88 /* UIImageView+DownloadImage.swift in Sources */,
+				181BFE301B5E6EEB0087257F /* SlideOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
