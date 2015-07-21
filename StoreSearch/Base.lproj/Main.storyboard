@@ -133,12 +133,19 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-aU-JUX">
-                                        <rect key="frame" x="176" y="212" width="60" height="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-aU-JUX">
+                                        <rect key="frame" x="166" y="210" width="60" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="DXi-3q-ZzB"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                         <state key="normal" title="$9.99" backgroundImage="PriceButton">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="openInStore" destination="ZOR-8K-RzA" eventType="touchUpInside" id="qS7-Y5-pKW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nff-16-9fW">
                                         <rect key="frame" x="10" y="195" width="52" height="21"/>
@@ -150,7 +157,9 @@
                                 <color key="backgroundColor" white="1" alpha="0.95000000000000007" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="28b-8W-eaP"/>
+                                    <constraint firstAttribute="trailing" secondItem="hdW-aU-JUX" secondAttribute="trailing" constant="14" id="7Q6-Yh-Ab7"/>
                                     <constraint firstAttribute="width" constant="240" id="90M-8y-ZOp"/>
+                                    <constraint firstAttribute="bottom" secondItem="hdW-aU-JUX" secondAttribute="bottom" constant="6" id="SaC-ND-PK5"/>
                                 </constraints>
                             </view>
                         </subviews>
