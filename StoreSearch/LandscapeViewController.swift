@@ -29,12 +29,15 @@ class LandscapeViewController: UIViewController {
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(true)
         
         scrollView.backgroundColor = UIColor(patternImage: UIImage(named: "LandscapeBackground")!)
+        
+        pageControll.numberOfPages = 0
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         scrollView.frame = view.bounds
+        // put page controll at the bottom of the screen
         pageControll.frame = CGRect(
             x: 0,
             y: view.frame.size.height - pageControll.frame.size.height,
@@ -45,6 +48,14 @@ class LandscapeViewController: UIViewController {
             firstTime = false
             titleButtons(searchResults)
         }
+    }
+    
+    @IBAction func pageChanged(sender: UIPageControl) {
+        UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseInOut, animations: {
+            self.scrollView.contentOffset = CGPoint(
+                x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage),
+                y: 0)
+        }, completion: nil)
     }
     
     private func titleButtons(searchResults: [SearchResult]) {
@@ -111,7 +122,17 @@ class LandscapeViewController: UIViewController {
         let buttonsPerPage = columnsPerPage * rowsPerPage
         let numPages = 1 + (searchResults.count - 1) / buttonsPerPage
         scrollView.contentSize = CGSize(width: CGFloat(numPages)*scrollViewWidth, height: scrollView.bounds.size.height)
-        println("Number of pages: \(numPages)")
+        
+        pageControll.numberOfPages = numPages
+        pageControll.currentPage = 0
     }
 
+}
+
+extension LandscapeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let width = scrollView.bounds.size.width
+        let currentPage = Int((scrollView.contentOffset.x + width/2) / width)
+        pageControll.currentPage = currentPage
+    }
 }
