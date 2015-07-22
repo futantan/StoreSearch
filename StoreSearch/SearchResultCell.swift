@@ -55,7 +55,5 @@ class SearchResultCell: UITableViewCell {
             downloadTask = artworkImageView.loadImageWithURL(url)
         }
     }
-    
-    
 
 }
