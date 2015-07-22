@@ -31,7 +31,6 @@ class SearchViewController: UIViewController {
         performSearch()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,6 +66,7 @@ class SearchViewController: UIViewController {
         landscapeViewController = storyboard!.instantiateViewControllerWithIdentifier("LandscapeViewController") as? LandscapeViewController
         
         if let controller = landscapeViewController {
+            controller.searchResults = searchResults
             controller.view.frame = view.bounds
             controller.view.alpha = 0
             
@@ -111,10 +111,10 @@ class SearchViewController: UIViewController {
     func urlWithSearchText(searchText: String, category: Int) -> NSURL {
         var entityName: String
         switch category {
-        case 1: entityName = "musicTrack"
-        case 2: entityName = "software"
-        case 3: entityName = "ebook"
-        default: entityName = ""
+            case 1: entityName = "musicTrack"
+            case 2: entityName = "software"
+            case 3: entityName = "ebook"
+            default: entityName = ""
         }
         let escapedSearchText = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         
