@@ -126,6 +126,9 @@ class SearchViewController: UIViewController {
                     self.showNetworkError()
                 }
                 self.tableView.reloadData()
+                if let controller = self.landscapeViewController {
+                    controller.searchResultsReceived()
+                }
         })
         
         tableView.reloadData()
