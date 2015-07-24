@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D20781B62203B00A8B968 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D20771B62203B00A8B968 /* MenuViewController.swift */; };
 		1817CEFE1B5D2EA400F0955C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */; };
 		1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */; };
 		181BFE2C1B5E41450087257F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BFE2B1B5E41450087257F /* GradientView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180D20771B62203B00A8B968 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1817CEFD1B5D2EA400F0955C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1817CEFF1B5D375600F0955C /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		181BFE2B1B5E41450087257F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				18649AD21B60F92C008B91F6 /* LoadingCell.xib */,
 				18649ACE1B60F6F6008B91F6 /* NothingFoundCell.xib */,
 				18FDA0D81B58EEF9008C051A /* Main.storyboard */,
+				180D20771B62203B00A8B968 /* MenuViewController.swift */,
 				18FDA0DB1B58EEF9008C051A /* Images.xcassets */,
 				18FDA0D21B58EEF9008C051A /* Supporting Files */,
 			);
@@ -270,6 +273,7 @@
 				1865B4811B5F868900A082F9 /* Search.swift in Sources */,
 				18FDA0D71B58EEF9008C051A /* SearchViewController.swift in Sources */,
 				1817CF001B5D375600F0955C /* DimmingPresentationController.swift in Sources */,
+				180D20781B62203B00A8B968 /* MenuViewController.swift in Sources */,
 				181BFE341B5E82770087257F /* FadeOutAnimationController.swift in Sources */,
 				18FDA0F51B592E1F008C051A /* SearchResult.swift in Sources */,
 				18DAEE371B594BBD00F62184 /* SearchResultCell.swift in Sources */,
