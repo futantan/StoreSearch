@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8wh-NM-ol8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="286"/>
+            <point key="canvasLocation" x="984" y="332"/>
         </scene>
         <!--Landscape View Controller-->
         <scene sceneID="k9t-4I-mdw">
@@ -113,7 +113,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teF-r7-xKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="1050"/>
+            <point key="canvasLocation" x="304" y="994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kco-DT-Pm7">
+            <objects>
+                <navigationController id="gjR-LG-HEP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IhB-gP-I07">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZOR-8K-RzA" kind="relationship" relationship="rootViewController" id="Zds-gf-bD1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMk-MN-6EY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="-180"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Voh-AA-OJv">
+            <objects>
+                <splitViewController id="8wh-NM-ol8" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="masterViewController" id="VaE-fP-2qF"/>
+                        <segue destination="gjR-LG-HEP" kind="relationship" relationship="detailViewController" id="8Ed-4n-dRQ"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6r5-Jj-wgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="-180"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ihr-pB-K5a">
@@ -145,8 +174,12 @@
                                         <rect key="frame" x="70" y="9" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="IXV-fx-Csl"/>
-                                            <constraint firstAttribute="width" constant="100" id="UhH-Xr-qM6"/>
-                                            <constraint firstAttribute="height" constant="100" id="VQ2-aS-yZC"/>
+                                            <constraint firstAttribute="width" constant="100" id="UhH-Xr-qM6">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="100" id="VQ2-aS-yZC">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                            </constraint>
                                             <constraint firstAttribute="height" constant="100" id="zJx-zV-aRM"/>
                                         </constraints>
                                         <variation key="default">
@@ -161,30 +194,36 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-Sf-xPe">
                                         <rect key="frame" x="10" y="138" width="76" height="17"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF3-Am-Uk6">
                                         <rect key="frame" x="10" y="163" width="27.5" height="13.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-kG-0FL">
                                         <rect key="frame" x="57" y="163" width="54.5" height="13.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79Z-Vb-34c">
-                                        <rect key="frame" x="57" y="180" width="62" height="13.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdW-aU-JUX">
                                         <rect key="frame" x="166" y="204" width="60" height="24"/>
@@ -205,35 +244,72 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79Z-Vb-34c">
+                                        <rect key="frame" x="57" y="180" width="62" height="13.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.95000000000000007" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fMo-kG-0FL" secondAttribute="trailing" constant="10" id="14M-eU-OZl"/>
-                                    <constraint firstItem="yfm-5g-plW" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="1RV-J6-AkU"/>
+                                    <constraint firstItem="yfm-5g-plW" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="1RV-J6-AkU">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="hdW-aU-JUX" secondAttribute="trailing" constant="14" id="7Q6-Yh-Ab7"/>
-                                    <constraint firstAttribute="width" constant="240" id="90M-8y-ZOp"/>
+                                    <constraint firstAttribute="width" constant="240" id="90M-8y-ZOp">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uTI-Sf-xPe" secondAttribute="trailing" constant="10" id="9Ta-jL-kLq"/>
                                     <constraint firstItem="uTI-Sf-xPe" firstAttribute="top" secondItem="yfm-5g-plW" secondAttribute="bottom" constant="4" id="MlL-zI-FEm"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yfm-5g-plW" secondAttribute="trailing" constant="10" id="QYh-6p-h4R"/>
                                     <constraint firstAttribute="bottom" secondItem="hdW-aU-JUX" secondAttribute="bottom" constant="6" id="SaC-ND-PK5"/>
-                                    <constraint firstItem="hdW-aU-JUX" firstAttribute="top" secondItem="79Z-Vb-34c" secondAttribute="bottom" constant="10" id="Xd0-nb-Yu3"/>
+                                    <constraint firstItem="hdW-aU-JUX" firstAttribute="top" secondItem="79Z-Vb-34c" secondAttribute="bottom" constant="10" id="Xd0-nb-Yu3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="79Z-Vb-34c" secondAttribute="trailing" constant="10" id="ZZc-VM-cCR"/>
                                     <constraint firstItem="Wfi-dV-gd3" firstAttribute="top" secondItem="d8i-Aj-W2W" secondAttribute="top" constant="3" id="bDs-bb-GOO"/>
                                     <constraint firstItem="fMo-kG-0FL" firstAttribute="leading" secondItem="79Z-Vb-34c" secondAttribute="leading" id="bU8-d0-9Oc"/>
-                                    <constraint firstItem="Nff-16-9fW" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="biO-rD-BZ4"/>
+                                    <constraint firstItem="Nff-16-9fW" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="biO-rD-BZ4">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
                                     <constraint firstItem="Nff-16-9fW" firstAttribute="baseline" secondItem="79Z-Vb-34c" secondAttribute="baseline" id="bzx-h6-uaV"/>
-                                    <constraint firstItem="uTI-Sf-xPe" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="cKD-hb-dtF"/>
-                                    <constraint firstItem="vF3-Am-Uk6" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="dWc-du-DB0"/>
+                                    <constraint firstItem="uTI-Sf-xPe" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="cKD-hb-dtF">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="vF3-Am-Uk6" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="10" id="dWc-du-DB0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
                                     <constraint firstItem="fMo-kG-0FL" firstAttribute="baseline" secondItem="vF3-Am-Uk6" secondAttribute="baseline" id="gN9-MB-n2j"/>
                                     <constraint firstItem="vF3-Am-Uk6" firstAttribute="top" secondItem="uTI-Sf-xPe" secondAttribute="bottom" constant="8" id="ogS-iJ-n0K"/>
-                                    <constraint firstItem="gMI-kD-U97" firstAttribute="top" secondItem="d8i-Aj-W2W" secondAttribute="top" constant="9" id="rst-8a-pIJ"/>
+                                    <constraint firstItem="gMI-kD-U97" firstAttribute="top" secondItem="d8i-Aj-W2W" secondAttribute="top" constant="9" id="rst-8a-pIJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="29"/>
+                                    </constraint>
                                     <constraint firstItem="Wfi-dV-gd3" firstAttribute="leading" secondItem="d8i-Aj-W2W" secondAttribute="leading" constant="3" id="vSg-3P-jq1"/>
                                     <constraint firstAttribute="centerX" secondItem="gMI-kD-U97" secondAttribute="centerX" id="wsx-Rx-mbd"/>
                                     <constraint firstItem="fMo-kG-0FL" firstAttribute="leading" secondItem="vF3-Am-Uk6" secondAttribute="trailing" constant="20" id="xmc-EL-VJo"/>
                                     <constraint firstItem="Nff-16-9fW" firstAttribute="top" secondItem="vF3-Am-Uk6" secondAttribute="bottom" constant="4" id="z9m-7z-9CG"/>
-                                    <constraint firstItem="yfm-5g-plW" firstAttribute="top" secondItem="gMI-kD-U97" secondAttribute="bottom" constant="6" id="zl9-XL-Ui3"/>
+                                    <constraint firstItem="yfm-5g-plW" firstAttribute="top" secondItem="gMI-kD-U97" secondAttribute="bottom" constant="6" id="zl9-XL-Ui3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="28"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <exclude reference="Wfi-dV-gd3"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="bDs-bb-GOO"/>
+                                        <exclude reference="vSg-3P-jq1"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -242,6 +318,7 @@
                             <constraint firstAttribute="centerY" secondItem="d8i-Aj-W2W" secondAttribute="centerY" id="QJF-fm-ihP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rUZ-nW-gHm"/>
                     <connections>
                         <outlet property="artistNameLabel" destination="uTI-Sf-xPe" id="2TA-b6-Gqa"/>
                         <outlet property="artworkImageView" destination="gMI-kD-U97" id="I1l-Wy-0kv"/>
@@ -254,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1s4-Iq-GeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="664"/>
+            <point key="canvasLocation" x="1664" y="994"/>
         </scene>
     </scenes>
     <resources>
